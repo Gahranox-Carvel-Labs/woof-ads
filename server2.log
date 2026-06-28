@@ -1,0 +1,25 @@
+
+> woof-ads@0.0.0 start
+> ng serve --port 4201
+
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+main.js             | main          |  16.75 kB |
+styles.css          | styles        | 223 bytes |
+
+                    | Initial total |  16.97 kB
+
+Application bundle generation complete. [2.332 seconds] - 2026-06-28T14:54:42.789Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4201/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 18.32 kB |
+
+Application bundle generation complete. [0.311 seconds] - 2026-06-28T14:57:50.440Z
+
+Page reload sent to client(s).

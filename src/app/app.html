@@ -1,0 +1,40 @@
+@if (!safeUrl()) {
+  <div class="home-container">
+    <h1>Welcome to WoofAds</h1>
+    <p>Enter a URL to view it with ads.</p>
+    <form (ngSubmit)="onSubmit()" class="url-form">
+      <input type="text" [(ngModel)]="targetUrl" name="url" placeholder="e.g. www.google.com" required>
+      <button type="submit">Go</button>
+    </form>
+  </div>
+} @else {
+  <div class="layout-container">
+    <header class="ad-header">
+      <!-- Top Ad -->
+      <app-ad adSlot="7597307031" adFormat="auto" [fullWidthResponsive]="true"></app-ad>
+    </header>
+
+    <div class="main-content">
+      <aside class="ad-sidebar left">
+        <!-- Left Sidebar Ad -->
+        <app-ad adSlot="3658062025" adFormat="autorelaxed" [fullWidthResponsive]="false"></app-ad>
+      </aside>
+
+      <section class="iframe-container">
+        <iframe [src]="safeUrl()" width="100%" height="100%" frameborder="0"></iframe>
+      </section>
+
+      <aside class="ad-sidebar right">
+        <!-- Right Sidebar Ad -->
+        <app-ad adSlot="3658062025" adFormat="autorelaxed" [fullWidthResponsive]="false"></app-ad>
+      </aside>
+    </div>
+
+    <footer class="ad-footer">
+      <!-- Bottom Ad -->
+      <app-ad adSlot="7597307031" adFormat="auto" [fullWidthResponsive]="true"></app-ad>
+    </footer>
+  </div>
+}
+
+<router-outlet></router-outlet>
