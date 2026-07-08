@@ -4,10 +4,16 @@ this is used to display free medium content with ads. It loads the requested sit
 
 ## Setup & Installation
 
-To install dependencies, you can run the provided setup script:
+To install dependencies on macOS/Linux, run the provided setup script:
 
 ```bash
 ./setup.sh
+```
+
+To install dependencies on Windows, run the PowerShell script:
+
+```powershell
+.\setup.ps1
 ```
 
 Alternatively, you can manually install the required packages:
