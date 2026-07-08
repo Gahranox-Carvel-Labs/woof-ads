@@ -1,11 +1,35 @@
 @if (!safeUrl()) {
   <div class="home-container">
-    <h1>Welcome to WoofAds</h1>
-    <p>Enter a URL to view it with ads.</p>
-    <form (ngSubmit)="onSubmit()" class="url-form">
-      <input type="text" [(ngModel)]="targetUrl" name="url" placeholder="e.g. www.google.com" required>
-      <button type="submit">Go</button>
-    </form>
+    <div class="hero-section">
+      <h1>Welcome to WoofAds</h1>
+      <p class="subtitle">Experience the web with integrated advertisements. A seamless way to view content and support platforms.</p>
+
+      <form (ngSubmit)="onSubmit()" class="url-form">
+        <input type="text" [(ngModel)]="targetUrl" name="url" placeholder="Enter a website URL (e.g. google.com)" required>
+        <button type="submit">View Site</button>
+      </form>
+    </div>
+
+    <div class="how-to-section">
+      <h2>How it Works</h2>
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-icon">🔗</div>
+          <h3>Direct Link</h3>
+          <p>Add <code>?site=yoururl.com</code> to the end of the URL to directly share or load a framed website.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⌨️</div>
+          <h3>Search Bar</h3>
+          <p>Use the search bar above to instantly view any website without touching the address bar.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Responsive</h3>
+          <p>Ads automatically adjust to your screen size for an optimal viewing experience.</p>
+        </div>
+      </div>
+    </div>
   </div>
 } @else {
   <div class="layout-container">

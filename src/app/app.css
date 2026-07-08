@@ -3,38 +3,123 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: sans-serif;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #333;
+}
+
+.hero-section {
+  padding: 80px 20px;
+  max-width: 800px;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #555;
+  line-height: 1.6;
 }
 
 .url-form {
-  margin-top: 20px;
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .url-form input {
-  padding: 10px;
-  width: 300px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1.1rem;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  outline: none;
+  transition: border-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.url-form input:focus {
+  border-color: #007bff;
 }
 
 .url-form button {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0,123,255,0.3);
 }
 
 .url-form button:hover {
   background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.how-to-section {
+  padding: 60px 20px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 -10px 20px rgba(0,0,0,0.02);
+}
+
+.how-to-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+  border: 1px solid #eee;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
 }
 
 /* Layout for the iframe + ads view */
@@ -52,7 +137,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90px; /* Standard ad height */
+  min-height: 90px;
   background-color: #fafafa;
 }
 
@@ -63,7 +148,7 @@
 }
 
 .ad-sidebar {
-  width: 200px; /* Sidebar ad width */
+  width: 200px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
