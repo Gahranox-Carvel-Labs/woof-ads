@@ -3,6 +3,7 @@ import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-ad',
+  standalone: true,
   templateUrl: './ad.html',
   styleUrls: ['./ad.css']
 })

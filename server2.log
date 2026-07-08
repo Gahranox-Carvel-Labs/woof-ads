@@ -15,3 +15,11 @@ Application bundle generation complete. [2.314 seconds] - 2026-07-08T16:01:07.42
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
   ➜  Local:   http://localhost:4201/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 24.80 kB |
+
+Application bundle generation complete. [4.400 seconds] - 2026-07-08T16:16:30.646Z
+
+Page reload sent to client(s).

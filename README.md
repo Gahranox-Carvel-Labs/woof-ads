@@ -7,13 +7,13 @@ this is used to display free medium content with ads. It loads the requested sit
 To install dependencies on macOS/Linux, run the provided setup script:
 
 ```bash
-./setup.sh
+./scripts/setup.sh
 ```
 
 To install dependencies on Windows, run the PowerShell script:
 
 ```powershell
-.\setup.ps1
+.\scripts\setup.ps1
 ```
 
 Alternatively, you can manually install the required packages:
@@ -46,6 +46,18 @@ ng build
 ```
 
 This will compile your project and store the static build artifacts in the `dist/woof-ads/` directory. You can host this directory on any static file hosting service (e.g., GitHub Pages, Vercel, Netlify, Apache, Nginx). By default, the production build optimizes your application for performance and speed.
+
+We also provide interactive scripts for building production distributions:
+
+**macOS/Linux:**
+```bash
+./scripts/build-prod.sh
+```
+
+**Windows:**
+```powershell
+.\scripts\build-prod.ps1
+```
 
 ## Running unit tests
 
